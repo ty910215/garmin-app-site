@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>铁人三项AI教练 · 个人训练闭环系统</title>
+  <style>
+    :root { --bg:#0f1419; --card:#1a212b; --fg:#e6edf3; --muted:#8b98a5; --accent:#4ea1ff; --line:#2a3441; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Segoe UI, sans-serif;
+           background:var(--bg); color:var(--fg); line-height:1.7; }
+    .wrap { max-width:820px; margin:0 auto; padding:48px 20px 64px; }
+    header h1 { font-size:28px; margin:0 0 6px; }
+    .tag { color:var(--accent); font-weight:600; font-size:14px; letter-spacing:.5px; }
+    section { background:var(--card); border:1px solid var(--line); border-radius:12px;
+              padding:22px 24px; margin-top:20px; }
+    h2 { font-size:18px; margin:0 0 12px; border-left:3px solid var(--accent); padding-left:10px; }
+    ul { margin:0; padding-left:20px; } li { margin:6px 0; }
+    .muted { color:var(--muted); font-size:14px; }
+    .pill { display:inline-block; background:#16324f; color:#9fd0ff; border-radius:999px;
+            padding:3px 12px; font-size:13px; margin:3px 6px 3px 0; }
+    footer { margin-top:32px; color:var(--muted); font-size:13px; text-align:center; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>铁人三项AI教练</h1>
+      <div class="tag">个人训练闭环系统 · 非商业</div>
+    </header>
+
+    <section>
+      <h2>项目简介</h2>
+      <p>「铁人三项AI教练」是一个<strong>个人使用的训练数据闭环系统</strong>，由本人独立开发并仅服务于开发者自身的铁人三项与力量训练管理。系统读取本人运动手表与健康 App 的数据，结合训练科学与个人状态，生成并推送训练计划，再读回实际执行数据做效果评估与下周调整。</p>
+      <p class="muted">本项目不面向公众、不提供注册、不收集任何第三方用户数据，不属于商业产品。</p>
+    </section>
+
+    <section>
+      <h2>核心功能</h2>
+      <ul>
+        <li><strong>健康感知</strong>：读取本人 Garmin 睡眠、HRV、静息心率等健康数据，推算训练准备度。</li>
+        <li><strong>计划生成</strong>：依据状态与周期目标，生成力量训练与有氧训练计划。</li>
+        <li><strong>计划下发</strong>：力量训练写入训记 App 记录；有氧训练通过 Garmin Training / Courses API 推送至本人手表引导执行。</li>
+        <li><strong>结果评估</strong>：训练后读回 Garmin 活动与训记实际记录，评估完成度并生成下周调整建议。</li>
+        <li><strong>营养追踪</strong>：读取本人训记营养摄入记录，参与达标判断。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>数据来源</h2>
+      <span class="pill">Garmin Connect（健康 / 活动）</span>
+      <span class="pill">Garmin Training / Courses（推送计划）</span>
+      <span class="pill">训记 Xunji（训练 / 营养）</span>
+      <p class="muted">所有数据均来自开发者本人账户，经本人显式授权后读取与写入，不涉及任何其他个人。</p>
+    </section>
+
+    <section>
+      <h2>非商业声明</h2>
+      <p>本项目为开发者个人训练辅助工具，<strong>不收费、不广告、不对外提供服务</strong>。Garmin Connect API 与训记 Open API 仅用于本人数据的读取与回写，符合各平台个人/非商业使用范畴。详见 <a href="privacy.html">隐私政策</a>。</p>
+    </section>
+
+    <section>
+      <h2>联系方式</h2>
+      <p class="muted">本项目为个人项目，如有疑问可通过开发者邮箱联系：<a href="mailto:gemini.huge@outlook.com">gemini.huge@outlook.com</a></p>
+    </section>
+
+    <footer>© 2026 铁人三项AI教练 · 个人项目</footer>
+  </div>
+</body>
+</html>

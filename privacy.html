@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 · 铁人三项AI教练</title>
+  <style>
+    :root { --bg:#0f1419; --card:#1a212b; --fg:#e6edf3; --muted:#8b98a5; --accent:#4ea1ff; --line:#2a3441; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Segoe UI, sans-serif;
+           background:var(--bg); color:var(--fg); line-height:1.8; }
+    .wrap { max-width:820px; margin:0 auto; padding:48px 20px 64px; }
+    h1 { font-size:26px; margin:0 0 4px; }
+    .tag { color:var(--accent); font-weight:600; font-size:14px; }
+    section { background:var(--card); border:1px solid var(--line); border-radius:12px;
+              padding:22px 24px; margin-top:18px; }
+    h2 { font-size:17px; margin:0 0 10px; border-left:3px solid var(--accent); padding-left:10px; }
+    p, li { font-size:15px; }
+    .muted { color:var(--muted); font-size:13px; }
+    a { color:var(--accent); text-decoration:none; }
+    footer { margin-top:30px; color:var(--muted); font-size:13px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>隐私政策</h1>
+    <div class="tag">铁人三项AI教练 · 个人训练闭环系统</div>
+    <p class="muted">生效日期：2026-10-22</p>
+
+    <section>
+      <h2>1. 概述</h2>
+      <p>「铁人三项AI教练」（以下简称"本系统"）是由个人独立开发、<strong>仅服务于开发者本人</strong>的训练数据闭环系统。本系统不面向公众、不提供用户注册、不收集任何第三方个人数据。本政策说明本系统如何处理开发者本人的数据。</p>
+    </section>
+
+    <section>
+      <h2>2. 数据控制者</h2>
+      <p>数据控制者：铁人三项AI教练（个人项目）。联系邮箱：<a href="mailto:gemini.huge@outlook.com">gemini.huge@outlook.com</a></p>
+    </section>
+
+    <section>
+      <h2>3. 我们处理的数据类型</h2>
+      <ul>
+        <li><strong>Garmin 健康与活动数据</strong>：睡眠、HRV（心率变异性）、静息心率、活动记录（含 .FIT 文件）、身体成分等，经本人 Garmin 账户 OAuth 授权后读取。</li>
+        <li><strong>Garmin 训练/路线数据</strong>：本系统生成的训练计划与路线，经授权后通过 Training / Courses API 写回本人 Garmin 账户，用于设备引导训练。</li>
+        <li><strong>训记（Xunji）训练与营养数据</strong>：本人训练记录（含 RPE）、营养摄入记录、身体数据，经本人授权后读取与写入。</li>
+      </ul>
+      <p class="muted">上述数据全部来源于开发者本人账户，不存在其他数据主体。</p>
+    </section>
+
+    <section>
+      <h2>4. 数据处理目的</h2>
+      <ul>
+        <li>推算训练准备度，辅助训练计划调整；</li>
+        <li>生成并下发力量与有氧训练计划；</li>
+        <li>训练后读回实际执行数据，进行效果评估与下周调整；</li>
+        <li>营养摄入达标判断。</li>
+      </ul>
+      <p>所有处理均限于<strong>本人训练管理目的</strong>，不进行任何商业利用、画像分析或对外提供。</p>
+    </section>
+
+    <section>
+      <h2>5. 数据共享</h2>
+      <p>本系统<strong>不与任何第三方共享</strong>您的个人数据。数据仅在您本人账户与以下数据提供方之间，按您显式授权进行读取/写入：</p>
+      <ul>
+        <li>Garmin Connect（健康、活动、训练、路线）；</li>
+        <li>训记 Xunji（训练、营养、身体）。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 数据存储与安全</h2>
+      <p>您的训练与健康数据存储在开发者自有的云数据库（腾讯云 PostgreSQL）中，仅开发者本人可通过自有凭证访问。系统采用访问控制与传输加密，限制数据的访问范围。</p>
+    </section>
+
+    <section>
+      <h2>7. 您的权利</h2>
+      <ul>
+        <li>您可随时导出本人全部数据；</li>
+        <li>您可随时删除本人账户下的所有数据；</li>
+        <li>您可随时在 Garmin / 训记端撤销授权，本系统将停止读取相应数据。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. 政策变更</h2>
+      <p>如本系统用途发生变更（例如向第三方提供服务），将同步更新本政策并重新征得授权。当前版本仅对应个人、非商业用途。</p>
+    </section>
+
+    <footer>© 2026 铁人三项AI教练 · 个人项目</footer>
+  </div>
+</body>
+</html>
